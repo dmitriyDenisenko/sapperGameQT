@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>source_pic/1</file>
+        <file>source_pic/2</file>
+        <file>source_pic/3</file>
+        <file>source_pic/4</file>
+        <file>source_pic/5</file>
+        <file>source_pic/6</file>
+        <file>source_pic/7</file>
+        <file>source_pic/8</file>
+        <file>source_pic/bomb</file>
+        <file>source_pic/flag</file>
+        <file>source_pic/logo</file>
+        <file>source_pic/Logo-screen</file>
+        <file>source_pic/Pacman</file>
+        <file>source_pic/pink cube</file>
+        <file>source_pic/plusBooton1</file>
+        <file>source_pic/Screen</file>
+        <file>source_pic/white cube</file>
+        <file>source_pic/ZeroButton</file>
+        <file>source_pic/ZeroBuuton50</file>
+    </qresource>
+</RCC>
