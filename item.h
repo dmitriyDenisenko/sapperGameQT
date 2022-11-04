@@ -6,16 +6,20 @@
 
 
 
-class item : public QGraphicsPixmapItem
+class item : public QObject, public QGraphicsPixmapItem
 {
+    Q_OBJECT
 public:
     item(QString path);
     int flag;
-    void setNum(int y, int x);
+    int getIsFlagOrWhiteBlock();
+    void setIsFlagOrWhiteBlock(int flag);
+    int getSpreadFlag();
+    void setSpreadFlag(int flag);
+signals:
+    void setNum(int y,int x);
 private:
-    void calculateBombs(int x, int y);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
-    void findWhiteCubes(int x, int y);
     int boomNum;
     int isFlagOrWhiteBlock;
     int spreadFlag; //Is the current block an element of recursion

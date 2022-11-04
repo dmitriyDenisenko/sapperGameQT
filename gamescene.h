@@ -21,6 +21,9 @@ public slots:
 private:
     QTime t;
     QTimer *ptimer;
+    void setNum(int y, int x);
+    int calculateBombs(int x, int y);
+    void findWhiteCubes(int x, int y);
 };
 
 #endif // GAMESCENE_H
