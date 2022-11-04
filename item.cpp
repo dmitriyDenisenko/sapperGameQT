@@ -8,10 +8,8 @@
 #include <qlogging.h>
 
 int gameOverFlag = 0;
-int a[8][8];
 int flagNumb;
 extern int Click;
-extern item *allItems[64];
 
 item::item(QString path)
 {
@@ -34,7 +32,7 @@ void item::mousePressEvent(QGraphicsSceneMouseEvent *event)
     {
         m_x = this->pos().x();
         m_y = this->pos().y();
-        setNum(m_y/50, m_x/50);
+        emit setNum(m_y/50, m_x/50);
 
     }else if(event->button() == Qt::LeftButton && flag == 1 && isFlagOrWhiteBlock == 0)
     {
