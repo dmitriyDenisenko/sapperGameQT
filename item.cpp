@@ -21,6 +21,13 @@ item::item(QString path)
     flag = 0;
 }
 
+item::item()
+{
+    this->setPixmap(QPixmap(":/source_pic/pink cube"));
+    isFlagOrWhiteBlock = 0;
+    spreadFlag = 0;
+    flag = 0;
+}
 void item::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton && flag == 0 && isFlagOrWhiteBlock == 0)

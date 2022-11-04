@@ -10,6 +10,7 @@ class item : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
+    item();
     item(QString path);
     int flag;
     int getIsFlagOrWhiteBlock();
